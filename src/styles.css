@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+*{margin: 0; padding: 0;}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700&display=swap');
+html {
+    font-size: 0.625rem;
+  }
+body{font-family: 'Montserrat', sans-serif; font-weight: 400; color: #333333; line-height: 1.21; font-size: 1.4rem;}
+button{background: transparent; border: 0 none; cursor: pointer;}
+a{color: #0070D2; outline: none; text-decoration: none;}
+table *{}
+
+h1 {font-weight: 700; font-size: 1.8rem; margin-bottom: 10px;}
+.d-flex{display: flex;}
+.container {padding: 0 10px;}
+
+select{background: transparent; border: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	outline: none;
+  position: relative;
+  z-index: 2;
+  padding: 5px 28px;
+  color: #0070D2;
+}

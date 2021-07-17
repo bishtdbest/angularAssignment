@@ -1,0 +1,26 @@
+.navbar{ background: #f7f7f7; border: solid 1px #0070D2; padding: 8px 0;}
+
+.navbar .menu{ padding-top: 5px;}
+.navbar .menu li{display: inline-block; margin-right: 15px;}
+.navbar .menu li a{display: inline-block; color: #333333;}
+.navbar .menu li a:hover{color: #0070D2;}
+.navbar .menu li a.active{ color: #0070D2; border-bottom: solid 1px #0070D2;}
+
+.navbar .search-filter{margin-left: auto; display: flex;}
+.navbar div[class^="select-"]{ border: solid 1px #0070D2;  border-radius: 4px; background: white; position: relative; margin-left: 10px;}
+
+
+.navbar div[class^="select-"]::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-color: #0070D2 transparent transparent transparent;
+  z-index: 1;
+}
+
+.navbar span[class^="select-"]{ position: absolute; left: 6px; top: 6px; z-index: 1; }
+

@@ -1,0 +1,79 @@
+<div class="content-wrapper">
+    <div class="container">
+
+        <div class="select-view-wapper d-flex">
+            <div class="select-view d-flex">
+                <button class="btn-map">Map view</button>
+                <button class="btn-list active">List view</button>
+            </div>
+            <div class="time-range">
+                <span class="cal-icon"><img src="assets/images/calendar-icon.svg" alt=""></span>
+                <span><a href="#">Jan 14, 21 - Dec 14, 21</a></span>
+                <span>1M</span>
+                <span>1Y</span>
+                <span>Max</span>
+            </div>
+        </div>
+
+        <h1>All Items (35)</h1>
+        <div class="items-table">
+        <table  cellspacing="0">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>Substation <button class="more-options-icon"><img src="assets/images/more-options.svg" alt=""></button></td>
+                    <td>Asset Type <button class="more-options-icon"><img src="assets/images/more-options.svg" alt=""></button></td>
+                    <td>Asset Name <button class="more-options-icon"><img src="assets/images/more-options.svg" alt=""></button></td>
+                    <td>Alarm Name <button class="more-options-icon"><img src="assets/images/more-options.svg" alt=""></button></td>
+                    <td>Real Time <button class="more-options-icon"><img src="assets/images/more-options.svg" alt=""></button></td>
+                    <td>Unit <button class="more-options-icon"><img src="assets/images/more-options.svg" alt=""></button></td>
+                    <td>Trigger Time <button class="more-options-icon"><img src="assets/images/more-options.svg" alt=""></button></td>
+                    <td>Alarm <button class="more-options-icon"><img src="assets/images/more-options.svg" alt=""></button></td>
+                    <td>Alarm Ack <button class="more-options-icon"><img src="assets/images/more-options.svg" alt=""></button></td>
+                    <td>Ack By <button class="more-options-icon"><img src="assets/images/more-options.svg" alt=""></button></td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of dataInfo; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{data.substation}}</td>
+                    <td>{{data.assetsType}}</td>
+                    <td>{{data.assetName}}</td>
+                    <td>{{data.alarmName}}</td>
+                    <td>{{data.realTime}}</td>
+                    <td>{{data.unit}}</td>
+                    <td>{{data.triggerTime}}</td>
+                    <td><button class="btn-on">ON</button></td>
+                    <td><button class="tick-icon"><img src="assets/images/tick-icon.svg" alt=""></button></td>
+                    <td>{{data.ackBy}}</td>
+                    <td><button class="trends-icon"><img src="assets/images/Trends.svg" alt=""></button>
+                        <button class="recomendation-icon"><img src="assets/images/recomendation.svg" alt=""></button>
+                        <button class="alarm-ACK-icon"><img src="assets/images/alarm-ACK.svg" alt=""></button></td>
+                </tr>
+        </tbody>
+        </table>
+    </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container d-flex">
+
+        <div class="items-pagination">
+        <span class="per-page">Row per page:</span> 
+        <span class="select-pagination">
+            <select name="" id="">
+                <option value="">15</option>
+                <option value="">30</option>
+                <option value="">45</option>
+                <option value="">60</option>
+            </select>
+        </span>
+        <span class="out-of">1 of 13</span>
+        <button class="prev-icon"><img src="assets/images/prev-icon.svg" alt=""></button>
+        <button class="next-icon"><img src="assets/images/next-icon.svg" alt=""></button>
+        </div>
+
+    </div>
+</div>

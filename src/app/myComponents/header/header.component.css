@@ -1,0 +1,18 @@
+.header-top{ background: #0070d2; color: white; padding: 10px 0;} 
+.logo-wrapper{line-height: 22px;}
+.logo{ display: inline-block; padding-right: 10px; border-right: solid 1px white; margin-right: 6px;}
+.logo img{vertical-align: middle;}
+.logo-wrapper span{display: inline-block;}
+.user-links{margin-left: auto;}
+
+.notification {position: relative; margin-right: 40px; cursor: pointer;}
+.notification .notification-alert{ position: absolute; background-color: #ff0000; border-radius: 50%; color: white; height: 20px; width: 20px; right: -7px; top: -2px; text-align: center; line-height: 20px; font-size: 1rem;}
+
+.notification::after{content: ""; position: absolute; height: 22px; border-right: solid 1px white; right: -24px; top: 3px; }
+
+.user-links{display: flex;}
+.user-profile{margin-right: 8px;}
+.user-profile strong, .user-profile span{display: block; text-align: right;}
+.user-profile span{font-size: 1rem;}
+
+.user-icon{background-color: white; border-radius: 50%; color: #0070D2; height: 28px; width: 28px; text-align: center; line-height: 28px; font-size: 1rem;}
